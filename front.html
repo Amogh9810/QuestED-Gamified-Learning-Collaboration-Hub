@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added for better mobile scaling -->
+<title>QUEST ED - Start</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        font-family: "Poppins", sans-serif;
+        
+
+        background: url('trial.gif') no-repeat center center; 
+        background-size: cover;
+        overflow: hidden; 
+        animation: fadeIn 1.2s ease-in-out;
+        position: relative; 
+    }
+
+   
+    .title-container {
+        position: absolute;
+       
+        top: 20%;  
+        left: 3%; 
+        
+        z-index: 10;
+        text-align: center;
+        pointer-events: none; 
+    }
+    
+    h1 {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 45px; 
+        line-height: 1.5;
+        letter-spacing: 6px;
+        color: #fff;
+        margin: 0;
+        
+       
+        text-shadow: 
+            4px 4px 0px #000, 
+            -2px -2px 0px #4b0082; 
+
+        
+        animation: floatTitle 3s ease-in-out infinite;
+    }
+
+    
+    .pokeball-btn {
+        position: absolute;
+        z-index: 20;
+        cursor: pointer; 
+        
+        
+        top: 51.2%;  
+        left: 21.2%; 
+        
+       
+        width: 80px; 
+        height: 80px; 
+        border-radius: 50%; 
+
+        background: transparent; 
+        
+     
+    }
+
+   
+   
+
+    @keyframes floatTitle {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+</style>
+</head>
+
+<body>
+
+
+<audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+
+<div class="title-container">
+    <h1>QUEST-ED</h1>
+</div>
+
+
+<a href="http://localhost/signup.php" class="pokeball-btn" title="Click to Start"></a>
+
+</body>
+</html>
