@@ -29,8 +29,5 @@ study materials, forums, and a leaderboard system.
 3. Import database into phpMyAdmin
 4. Run: `http://localhost/finalDSWproject`
 
-## 🌐 Live Demo
-(Add link here)
-
 ## 📸 Screenshots
 (Add screenshots here)
